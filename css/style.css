@@ -12,6 +12,10 @@ body {
   margin: auto;
 }
 
+img {
+  max-width: 100%;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -339,6 +343,9 @@ template {
   justify-content: space-between;
   padding: 40px 0;
 }
+.navbar-top__menu-button {
+  display: none;
+}
 .navbar__search {
   margin-right: auto;
   margin-left: 108px;
@@ -429,7 +436,6 @@ template {
   }
   .navbar__search {
     margin-left: auto;
-    max-width: 340px;
   }
   .navbar-menu {
     padding-top: 22px;
@@ -439,16 +445,36 @@ template {
     font-size: 12px;
     line-height: 15px;
   }
+  .search__input {
+    width: 340px;
+  }
   .logo {
     width: 133px;
-  }
-  .logo__image {
-    width: 100%;
   }
 }
 @media (max-width: 768px) {
   .container {
     max-width: 576px;
     width: 92%;
+  }
+  .navbar__search, .navbar-menu, .navbar__user {
+    display: none;
+  }
+  .menu-button {
+    display: flex;
+    width: 16px;
+    height: 11px;
+    padding: 0;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  .menu-button__line {
+    width: 16px;
+    height: 1px;
+    background-color: #333333;
   }
 }/*# sourceMappingURL=style.css.map */
